@@ -1,0 +1,37 @@
+# Pokemon Card Recognition System
+# Core dependencies for training and inference
+
+# === Deep Learning ===
+torch>=2.0.0
+torchvision>=0.15.0
+timm>=1.0.0                    # LeViT-384 backbone
+ultralytics>=8.0.0             # YOLO detection
+
+# === Image Processing ===
+numpy>=1.24.0
+opencv-python>=4.8.0
+pillow>=10.0.0
+albumentations>=1.4.0          # Heavy augmentations (occlusion, etc.)
+
+# === Vector Search ===
+usearch>=2.12.0                # Fast ARM-optimized similarity search
+
+# === Model Export ===
+onnx>=1.15.0
+onnxruntime>=1.17.0
+
+# === Utilities ===
+tqdm>=4.66.0
+pyyaml>=6.0
+
+# === Web (optional) ===
+# flask>=3.0.0
+# flask-cors>=4.0.0
+
+# === Raspberry Pi Only ===
+# picamera2>=0.3.17            # Camera interface
+# python3-hailort              # Hailo runtime (install via apt)
+
+# === Training Only (SageMaker) ===
+# boto3                        # AWS SDK
+# sagemaker                    # SageMaker SDK

@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+
+# Data (too large for git)
+data/raw/card_images/
+data/processed/
+data/reference/
+
+# Models (too large for git)
+models/detection/*.pt
+models/detection/*.onnx
+models/embedding/*.hef
+models/embedding/*.onnx
+models/checkpoints/
+
+# Docker (too large for git)
+docker/hailo/*.zip
+docker/hailo/*.tar.gz
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Logs
+*.log
+logs/
+
+# Temp
+tmp/
+temp/
+*.tmp
+
+# Large training artifacts
+models/embedding/pytorch_weights/
+models/onnx/

@@ -1,0 +1,20 @@
+# SageMaker training requirements
+# These get installed in the SageMaker training container
+
+# Deep Learning Models
+transformers>=4.56.0     # DINOv3 support (officially added in 4.56.0)
+timm>=0.9.0              # ConvNeXt models for distillation
+
+# Data Augmentation & Processing
+albumentations>=1.3.0    # Advanced augmentations
+scipy>=1.10.0            # For motion blur, FFT (high-freq distillation)
+Pillow>=10.0.0           # PIL image operations
+
+# Experiment Tracking & Visualization
+mlflow>=2.18.0           # Experiment tracking and model registry
+tensorboard>=2.15.0      # Embedding visualization, metrics logging
+boto3>=1.28.0            # AWS SDK for MLflow artifact logging to S3
+
+# Training Utilities
+numpy>=1.24.0            # Required for scheduler, EMA, visualization
+onnx>=1.15.0             # ONNX model export

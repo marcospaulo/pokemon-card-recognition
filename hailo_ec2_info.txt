@@ -1,0 +1,21 @@
+====================================
+HAILO EC2 COMPILATION INSTANCE
+====================================
+Instance ID: i-0fb03883eddb631d8
+Public IP: 3.135.1.5
+Region: us-east-2
+Instance Type: m5.2xlarge (8 vCPUs, 32GB RAM)
+Cost: ~$0.38/hour
+Launched: Sun Jan 11 12:40:59 CST 2026
+
+SSH Command:
+  ssh -i ~/.ssh/claude-code-dev.pem ubuntu@3.135.1.5
+
+Next Steps:
+1. Wait 30 seconds for SSH to be ready
+2. Copy ONNX model to EC2
+3. Setup Hailo environment
+4. Compile to HEF format
+
+IMPORTANT: Remember to terminate when done!
+====================================

@@ -1,0 +1,67 @@
+{
+  "teacher_model": {
+    "model_name": "dinov3-vitl16-teacher",
+    "architecture": "DINOv3-ViT-L/16",
+    "parameters": "304M",
+    "embedding_dim": 768,
+    "training_approach": "Self-supervised + ArcFace fine-tuning",
+    "training_stages": [
+      "phase1_general",
+      "phase2_pokemon_cards"
+    ],
+    "input_size": "224x224",
+    "framework": "PyTorch 2.8.0 + Transformers",
+    "purpose": "Teacher model for knowledge distillation",
+    "inference_target": "Cloud/GPU",
+    "metrics_tracked": [
+      "top1_accuracy",
+      "top5_accuracy",
+      "embedding_similarity",
+      "retrieval_accuracy"
+    ]
+  },
+  "student_model": {
+    "model_name": "efficientnet-lite0-student",
+    "architecture": "EfficientNet-Lite0",
+    "parameters": "4.7M",
+    "embedding_dim": 768,
+    "training_approach": "Knowledge distillation from DINOv3",
+    "training_stages": [
+      "stage1_general",
+      "stage2_task_specific"
+    ],
+    "teacher_model": "dinov3-vitl16-teacher",
+    "distillation_losses": {
+      "feature": 0.35,
+      "kl_divergence": 0.25,
+      "attention": 0.25,
+      "high_frequency": 0.15
+    },
+    "input_size": "224x224",
+    "framework": "PyTorch 2.8.0 + timm",
+    "purpose": "Edge deployment on Hailo-8L",
+    "inference_target": "Raspberry Pi + Hailo-8L",
+    "hailo_compatible": true,
+    "normalization": "BatchNorm",
+    "metrics_tracked": [
+      "cosine_similarity_to_teacher",
+      "student_top1",
+      "teacher_top1",
+      "gap",
+      "feature_loss",
+      "kl_loss",
+      "attention_loss",
+      "highfreq_loss"
+    ]
+  },
+  "naming_convention": {
+    "pattern": "{model_type}-{architecture}-{stage}-{version}",
+    "examples": {
+      "teacher": "teacher-dinov3-vitl16-phase2-v1",
+      "student_stage1": "student-efficientnet-lite0-stage1-v1",
+      "student_stage2": "student-efficientnet-lite0-stage2-v1",
+      "onnx_export": "student-efficientnet-lite0-onnx-v1",
+      "hailo_hef": "student-efficientnet-lite0-hailo8l-v1"
+    }
+  }
+}

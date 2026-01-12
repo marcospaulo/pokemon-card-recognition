@@ -1,0 +1,15 @@
+{
+  "name": "pokemon-card-recognition",
+  "version": "1.0.0",
+  "description": "Pokemon Card Recognition project context and operations for SageMaker ML training",
+  "author": "Marcos Paulo",
+  "skills": [
+    "skills/project-context.md",
+    "skills/aws-resources.md",
+    "skills/model-details.md",
+    "skills/operations.md",
+    "skills/cost-optimization.md"
+  ],
+  "commands": [],
+  "agents": []
+}

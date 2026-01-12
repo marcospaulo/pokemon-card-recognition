@@ -1,0 +1,1264 @@
+{
+  "audit_date": "2026-01-11T21:03:32.608210",
+  "primary_region": "us-east-2",
+  "known_good_resources": {
+    "role": "SageMaker-MarcosAdmin-ExecutionRole",
+    "bucket": "pokemon-card-training-us-east-2"
+  },
+  "audit_results": {
+    "iam_roles": {
+      "project_roles": [
+        {
+          "name": "AmazonSageMakerAdminIAMExecutionRole",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonSageMakerAdminIAMExecutionRole",
+          "created": "2026-01-07T21:44:25+00:00",
+          "age_days": 4,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "SageMakerStudioAdminIAMPermissiveExecutionPolicy"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AmazonSagemakerCanvasBedrockRole-20260111T174905",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonSagemakerCanvasBedrockRole-20260111T174905",
+          "created": "2026-01-11T23:49:42+00:00",
+          "age_days": 0,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonSageMakerCanvasBedrockAccess"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AmazonSageMakerS3TablesRoleForLakeFormation",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonSageMakerS3TablesRoleForLakeFormation",
+          "created": "2026-01-07T21:49:40+00:00",
+          "age_days": 4,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonS3TablesLakeFormationServiceRole"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AmazonSageMakerServiceCatalogProductsApiGatewayRole",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonSageMakerServiceCatalogProductsApiGatewayRole",
+          "created": "2026-01-10T07:27:23+00:00",
+          "age_days": 1,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonSageMakerServiceCatalogProductsApiGatewayServiceRolePolicy"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AmazonSageMakerServiceCatalogProductsCloudformationRole",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonSageMakerServiceCatalogProductsCloudformationRole",
+          "created": "2026-01-10T07:27:23+00:00",
+          "age_days": 1,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AmazonSageMakerServiceCatalogProductsCodeBuildRole",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonSageMakerServiceCatalogProductsCodeBuildRole",
+          "created": "2026-01-10T07:27:23+00:00",
+          "age_days": 1,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AmazonSageMakerServiceCatalogProductsCodePipelineRole",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonSageMakerServiceCatalogProductsCodePipelineRole",
+          "created": "2026-01-10T07:27:23+00:00",
+          "age_days": 1,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonSageMakerServiceCatalogProductsCodePipelineServiceRolePolicy"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AmazonSageMakerServiceCatalogProductsEventsRole",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonSageMakerServiceCatalogProductsEventsRole",
+          "created": "2026-01-10T07:27:23+00:00",
+          "age_days": 1,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonSageMakerServiceCatalogProductsEventsServiceRolePolicy"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AmazonSageMakerServiceCatalogProductsExecutionRole",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonSageMakerServiceCatalogProductsExecutionRole",
+          "created": "2026-01-10T07:27:24+00:00",
+          "age_days": 1,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonSageMakerFullAccess"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AmazonSageMakerServiceCatalogProductsFirehoseRole",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonSageMakerServiceCatalogProductsFirehoseRole",
+          "created": "2026-01-10T07:27:23+00:00",
+          "age_days": 1,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonSageMakerServiceCatalogProductsFirehoseServiceRolePolicy"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AmazonSageMakerServiceCatalogProductsGlueRole",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonSageMakerServiceCatalogProductsGlueRole",
+          "created": "2026-01-10T07:27:23+00:00",
+          "age_days": 1,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonSageMakerServiceCatalogProductsGlueServiceRolePolicy"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AmazonSageMakerServiceCatalogProductsLambdaRole",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonSageMakerServiceCatalogProductsLambdaRole",
+          "created": "2026-01-10T07:27:23+00:00",
+          "age_days": 1,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonSageMakerServiceCatalogProductsLambdaServiceRolePolicy"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AmazonSageMakerServiceCatalogProductsLaunchRole",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonSageMakerServiceCatalogProductsLaunchRole",
+          "created": "2026-01-10T07:27:23+00:00",
+          "age_days": 1,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonSageMakerAdmin-ServiceCatalogProductsServiceRolePolicy"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AmazonSageMakerServiceCatalogProductsUseRole",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonSageMakerServiceCatalogProductsUseRole",
+          "created": "2026-01-10T07:27:23+00:00",
+          "age_days": 1,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonSageMakerServiceCatalogProductsUseRole-20260110T012721"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AmazonSageMakerUserIAMExecutionRole",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonSageMakerUserIAMExecutionRole",
+          "created": "2026-01-07T21:58:46+00:00",
+          "age_days": 4,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "SageMakerStudioUserIAMDefaultExecutionPolicy"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AWSServiceRoleForAmazonSageMakerNotebooks",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/sagemaker.amazonaws.com/AWSServiceRoleForAmazonSageMakerNotebooks",
+          "created": "2026-01-07T21:47:04+00:00",
+          "age_days": 4,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonSageMakerNotebooksServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/sagemaker.amazonaws.com/"
+        },
+        {
+          "name": "SageMaker-ExecutionRole",
+          "arn": "arn:aws:iam::943271038849:role/SageMaker-ExecutionRole",
+          "created": "2026-01-07T22:25:34+00:00",
+          "age_days": 4,
+          "attached_policies": 2,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonSageMakerFullAccess",
+            "AmazonS3FullAccess"
+          ],
+          "path": "/"
+        },
+        {
+          "name": "SageMaker-MarcosAdmin-ExecutionRole",
+          "arn": "arn:aws:iam::943271038849:role/SageMaker-MarcosAdmin-ExecutionRole",
+          "created": "2026-01-12T00:12:55+00:00",
+          "age_days": 0,
+          "attached_policies": 10,
+          "inline_policies": 2,
+          "policies": [
+            "AWSServiceCatalogAdminFullAccess",
+            "IAMFullAccess",
+            "AWSCodeBuildAdminAccess",
+            "IAMReadOnlyAccess",
+            "CloudWatchFullAccess",
+            "AmazonSageMakerFullAccess",
+            "AmazonS3FullAccess",
+            "AWSCodePipeline_FullAccess",
+            "AWSCloudFormationFullAccess",
+            "AWSLambda_FullAccess"
+          ],
+          "path": "/"
+        }
+      ],
+      "other_roles": [
+        {
+          "name": "AmazonBedrockExecutionRoleForFlows_1E42VX5C66V",
+          "arn": "arn:aws:iam::943271038849:role/service-role/AmazonBedrockExecutionRoleForFlows_1E42VX5C66V",
+          "created": "2026-01-02T13:02:41+00:00",
+          "age_days": 9,
+          "attached_policies": 2,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonBedrockFlowsInvokeFoundationModelPolicy_WPLDXWKK608",
+            "AmazonBedrockFlowsGetFlowPolicy_YK95CXE5HQQ"
+          ],
+          "path": "/service-role/"
+        },
+        {
+          "name": "AWSReservedSSO_AdministratorAccess_48e450b2d352e212",
+          "arn": "arn:aws:iam::943271038849:role/aws-reserved/sso.amazonaws.com/us-east-2/AWSReservedSSO_AdministratorAccess_48e450b2d352e212",
+          "created": "2025-12-04T19:03:06+00:00",
+          "age_days": 38,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AdministratorAccess"
+          ],
+          "path": "/aws-reserved/sso.amazonaws.com/us-east-2/"
+        },
+        {
+          "name": "AWSServiceRoleForAccessAnalyzer",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/access-analyzer.amazonaws.com/AWSServiceRoleForAccessAnalyzer",
+          "created": "2025-12-23T17:01:05+00:00",
+          "age_days": 19,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AccessAnalyzerServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/access-analyzer.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForAmazonAthena",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/ops.athena.amazonaws.com/AWSServiceRoleForAmazonAthena",
+          "created": "2026-01-07T21:48:42+00:00",
+          "age_days": 4,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonAthenaServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/ops.athena.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForAmazonElasticFileSystem",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/elasticfilesystem.amazonaws.com/AWSServiceRoleForAmazonElasticFileSystem",
+          "created": "2025-12-15T03:58:05+00:00",
+          "age_days": 27,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonElasticFileSystemServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/elasticfilesystem.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForAmazonEMRServerless",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/ops.emr-serverless.amazonaws.com/AWSServiceRoleForAmazonEMRServerless",
+          "created": "2026-01-10T07:27:15+00:00",
+          "age_days": 1,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonEMRServerlessServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/ops.emr-serverless.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForAmazonEventBridgeApiDestinations",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/apidestinations.events.amazonaws.com/AWSServiceRoleForAmazonEventBridgeApiDestinations",
+          "created": "2025-12-19T23:49:59+00:00",
+          "age_days": 23,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonEventBridgeApiDestinationsServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/apidestinations.events.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForApplicationAutoScaling_ECSService",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/ecs.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_ECSService",
+          "created": "2025-12-22T11:06:43+00:00",
+          "age_days": 20,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AWSApplicationAutoscalingECSServicePolicy"
+          ],
+          "path": "/aws-service-role/ecs.application-autoscaling.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForAppRunner",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/apprunner.amazonaws.com/AWSServiceRoleForAppRunner",
+          "created": "2025-12-05T08:22:42+00:00",
+          "age_days": 37,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AppRunnerServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/apprunner.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForAppRunnerNetworking",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/networking.apprunner.amazonaws.com/AWSServiceRoleForAppRunnerNetworking",
+          "created": "2025-12-12T07:51:29+00:00",
+          "age_days": 30,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AppRunnerNetworkingServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/networking.apprunner.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForAwsUserNotifications",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/notifications.amazonaws.com/AWSServiceRoleForAwsUserNotifications",
+          "created": "2025-12-22T13:26:21+00:00",
+          "age_days": 20,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AWSUserNotificationsServiceLinkedRolePolicy"
+          ],
+          "path": "/aws-service-role/notifications.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForComputeOptimizer",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/compute-optimizer.amazonaws.com/AWSServiceRoleForComputeOptimizer",
+          "created": "2025-12-29T02:08:01+00:00",
+          "age_days": 14,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "ComputeOptimizerServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/compute-optimizer.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForComputeOptimizerAutomation",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/aco-automation.amazonaws.com/AWSServiceRoleForComputeOptimizerAutomation",
+          "created": "2025-12-29T02:08:06+00:00",
+          "age_days": 14,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "ComputeOptimizerAutomationServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/aco-automation.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForCostOptimizationHub",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/cost-optimization-hub.bcm.amazonaws.com/AWSServiceRoleForCostOptimizationHub",
+          "created": "2025-12-29T02:07:46+00:00",
+          "age_days": 14,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "CostOptimizationHubServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/cost-optimization-hub.bcm.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForECS",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+          "created": "2025-12-15T03:57:59+00:00",
+          "age_days": 27,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonECSServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/ecs.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForElastiCache",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/elasticache.amazonaws.com/AWSServiceRoleForElastiCache",
+          "created": "2025-12-16T05:41:34+00:00",
+          "age_days": 26,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "ElastiCacheServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/elasticache.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForElasticLoadBalancing",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/elasticloadbalancing.amazonaws.com/AWSServiceRoleForElasticLoadBalancing",
+          "created": "2025-12-15T03:58:02+00:00",
+          "age_days": 27,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AWSElasticLoadBalancingServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/elasticloadbalancing.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForOrganizations",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/organizations.amazonaws.com/AWSServiceRoleForOrganizations",
+          "created": "2025-12-04T03:01:27+00:00",
+          "age_days": 39,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AWSOrganizationsServiceTrustPolicy"
+          ],
+          "path": "/aws-service-role/organizations.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForRDS",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/rds.amazonaws.com/AWSServiceRoleForRDS",
+          "created": "2025-12-12T07:59:07+00:00",
+          "age_days": 30,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonRDSServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/rds.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForResourceExplorer",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+          "created": "2025-12-04T03:08:00+00:00",
+          "age_days": 38,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AWSResourceExplorerServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/resource-explorer-2.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForServiceQuotas",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/servicequotas.amazonaws.com/AWSServiceRoleForServiceQuotas",
+          "created": "2025-12-04T21:29:52+00:00",
+          "age_days": 38,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "ServiceQuotasServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/servicequotas.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForSSO",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO",
+          "created": "2025-12-04T03:04:11+00:00",
+          "age_days": 38,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AWSSSOServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/sso.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForSupport",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+          "created": "2025-12-04T02:53:24+00:00",
+          "age_days": 39,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AWSSupportServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/support.amazonaws.com/"
+        },
+        {
+          "name": "AWSServiceRoleForTrustedAdvisor",
+          "arn": "arn:aws:iam::943271038849:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
+          "created": "2025-12-04T02:53:24+00:00",
+          "age_days": 39,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AWSTrustedAdvisorServiceRolePolicy"
+          ],
+          "path": "/aws-service-role/trustedadvisor.amazonaws.com/"
+        },
+        {
+          "name": "claude-code-dev-production-role-20251219205846876600000003",
+          "arn": "arn:aws:iam::943271038849:role/claude-code-dev-production-role-20251219205846876600000003",
+          "created": "2025-12-19T20:58:47+00:00",
+          "age_days": 23,
+          "attached_policies": 2,
+          "inline_policies": 0,
+          "policies": [
+            "CloudWatchAgentServerPolicy",
+            "AmazonSSMManagedInstanceCore"
+          ],
+          "path": "/"
+        },
+        {
+          "name": "codebase-indexer-eventbridge-invoke-role",
+          "arn": "arn:aws:iam::943271038849:role/codebase-indexer-eventbridge-invoke-role",
+          "created": "2025-12-20T04:13:22+00:00",
+          "age_days": 22,
+          "attached_policies": 0,
+          "inline_policies": 3,
+          "policies": [],
+          "path": "/"
+        },
+        {
+          "name": "open-webui-vpc-flow-logs-role",
+          "arn": "arn:aws:iam::943271038849:role/open-webui-vpc-flow-logs-role",
+          "created": "2025-12-14T18:21:56+00:00",
+          "age_days": 28,
+          "attached_policies": 0,
+          "inline_policies": 1,
+          "policies": [],
+          "path": "/"
+        },
+        {
+          "name": "rds-enhanced-monitoring-open-webui",
+          "arn": "arn:aws:iam::943271038849:role/rds-enhanced-monitoring-open-webui",
+          "created": "2025-12-14T18:22:54+00:00",
+          "age_days": 28,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonRDSEnhancedMonitoringRole"
+          ],
+          "path": "/"
+        },
+        {
+          "name": "seek-apps-rds-monitoring-20251228050415899200000002",
+          "arn": "arn:aws:iam::943271038849:role/seek-apps-rds-monitoring-20251228050415899200000002",
+          "created": "2025-12-28T05:04:16+00:00",
+          "age_days": 14,
+          "attached_policies": 1,
+          "inline_policies": 0,
+          "policies": [
+            "AmazonRDSEnhancedMonitoringRole"
+          ],
+          "path": "/"
+        },
+        {
+          "name": "session-observer-exec-20251228041412010900000003",
+          "arn": "arn:aws:iam::943271038849:role/session-observer-exec-20251228041412010900000003",
+          "created": "2025-12-28T04:14:12+00:00",
+          "age_days": 14,
+          "attached_policies": 1,
+          "inline_policies": 1,
+          "policies": [
+            "AmazonECSTaskExecutionRolePolicy"
+          ],
+          "path": "/"
+        },
+        {
+          "name": "session-observer-task-20251228041412010300000002",
+          "arn": "arn:aws:iam::943271038849:role/session-observer-task-20251228041412010300000002",
+          "created": "2025-12-28T04:14:12+00:00",
+          "age_days": 14,
+          "attached_policies": 0,
+          "inline_policies": 1,
+          "policies": [],
+          "path": "/"
+        },
+        {
+          "name": "tcg-mastermind-bag-task-20251215180130757800000001",
+          "arn": "arn:aws:iam::943271038849:role/tcg-mastermind-bag-task-20251215180130757800000001",
+          "created": "2025-12-15T18:01:31+00:00",
+          "age_days": 27,
+          "attached_policies": 0,
+          "inline_policies": 1,
+          "policies": [],
+          "path": "/"
+        },
+        {
+          "name": "tcg-mastermind-cloudtrail-cloudwatch-role",
+          "arn": "arn:aws:iam::943271038849:role/tcg-mastermind-cloudtrail-cloudwatch-role",
+          "created": "2025-12-14T19:44:11+00:00",
+          "age_days": 28,
+          "attached_policies": 0,
+          "inline_policies": 1,
+          "policies": [],
+          "path": "/"
+        },
+        {
+          "name": "tcg-mastermind-ebay-task-20251218021514356000000001",
+          "arn": "arn:aws:iam::943271038849:role/tcg-mastermind-ebay-task-20251218021514356000000001",
+          "created": "2025-12-18T02:15:14+00:00",
+          "age_days": 25,
+          "attached_policies": 0,
+          "inline_policies": 1,
+          "policies": [],
+          "path": "/"
+        },
+        {
+          "name": "tcg-mastermind-exec-20251215035759366500000007",
+          "arn": "arn:aws:iam::943271038849:role/tcg-mastermind-exec-20251215035759366500000007",
+          "created": "2025-12-15T03:57:59+00:00",
+          "age_days": 27,
+          "attached_policies": 1,
+          "inline_policies": 3,
+          "policies": [
+            "AmazonECSTaskExecutionRolePolicy"
+          ],
+          "path": "/"
+        },
+        {
+          "name": "tcg-mastermind-idx-task-20251215035758784100000001",
+          "arn": "arn:aws:iam::943271038849:role/tcg-mastermind-idx-task-20251215035758784100000001",
+          "created": "2025-12-15T03:57:59+00:00",
+          "age_days": 27,
+          "attached_policies": 0,
+          "inline_policies": 1,
+          "policies": [],
+          "path": "/"
+        },
+        {
+          "name": "tcg-mastermind-mcp-task-20251215035759153900000005",
+          "arn": "arn:aws:iam::943271038849:role/tcg-mastermind-mcp-task-20251215035759153900000005",
+          "created": "2025-12-15T03:57:59+00:00",
+          "age_days": 27,
+          "attached_policies": 0,
+          "inline_policies": 1,
+          "policies": [],
+          "path": "/"
+        },
+        {
+          "name": "tcg-mastermind-scraper-task-20251222164136103200000001",
+          "arn": "arn:aws:iam::943271038849:role/tcg-mastermind-scraper-task-20251222164136103200000001",
+          "created": "2025-12-22T16:41:36+00:00",
+          "age_days": 20,
+          "attached_policies": 0,
+          "inline_policies": 1,
+          "policies": [],
+          "path": "/"
+        },
+        {
+          "name": "tcg-mastermind-ui-task-20251215035759100200000004",
+          "arn": "arn:aws:iam::943271038849:role/tcg-mastermind-ui-task-20251215035759100200000004",
+          "created": "2025-12-15T03:57:59+00:00",
+          "age_days": 27,
+          "attached_policies": 0,
+          "inline_policies": 1,
+          "policies": [],
+          "path": "/"
+        }
+      ],
+      "aws_service_roles": 22
+    },
+    "iam_users": {
+      "users": [
+        {
+          "name": "bedrock-api-user",
+          "arn": "arn:aws:iam::943271038849:user/bedrock-api-user",
+          "created": "2025-12-20T03:09:38+00:00",
+          "age_days": 22,
+          "access_keys": 1,
+          "attached_policies": 1,
+          "groups": 0,
+          "password_last_used": "Never",
+          "path": "/"
+        },
+        {
+          "name": "bedrock-service-account",
+          "arn": "arn:aws:iam::943271038849:user/bedrock-service-account",
+          "created": "2026-01-02T09:12:47+00:00",
+          "age_days": 9,
+          "access_keys": 1,
+          "attached_policies": 1,
+          "groups": 0,
+          "password_last_used": "Never",
+          "path": "/"
+        },
+        {
+          "name": "litellm-bedrock",
+          "arn": "arn:aws:iam::943271038849:user/litellm-bedrock",
+          "created": "2025-12-28T09:53:33+00:00",
+          "age_days": 14,
+          "access_keys": 1,
+          "attached_policies": 1,
+          "groups": 0,
+          "password_last_used": "Never",
+          "path": "/"
+        },
+        {
+          "name": "termius-main",
+          "arn": "arn:aws:iam::943271038849:user/termius-main",
+          "created": "2025-12-18T22:20:33+00:00",
+          "age_days": 24,
+          "access_keys": 1,
+          "attached_policies": 4,
+          "groups": 0,
+          "password_last_used": "Never",
+          "path": "/"
+        }
+      ],
+      "sso_only": false
+    },
+    "sagemaker_regions": {
+      "ap-south-1": {
+        "domains": 0,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "eu-north-1": {
+        "domains": 0,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "eu-west-3": {
+        "domains": 0,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "eu-west-2": {
+        "domains": 0,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "eu-west-1": {
+        "domains": 0,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "ap-northeast-3": {
+        "domains": 0,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "ap-northeast-2": {
+        "domains": 0,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "ap-northeast-1": {
+        "domains": 0,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "ca-central-1": {
+        "domains": 0,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "sa-east-1": {
+        "domains": 0,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "ap-southeast-1": {
+        "domains": 0,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "ap-southeast-2": {
+        "domains": 0,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "eu-central-1": {
+        "domains": 0,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "us-east-1": {
+        "domains": 1,
+        "user_profiles": 1,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "us-east-2": {
+        "domains": 1,
+        "user_profiles": 1,
+        "training_jobs": 61,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "us-west-1": {
+        "domains": 0,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      },
+      "us-west-2": {
+        "domains": 0,
+        "training_jobs": 0,
+        "endpoints": 0,
+        "model_packages": 0
+      }
+    },
+    "s3_buckets": {
+      "project_buckets": [
+        {
+          "name": "amazon-sagemaker-943271038849-us-east-2-3nva8qgi67cxih",
+          "region": "us-east-2",
+          "created": "2026-01-07T21:45:13+00:00",
+          "age_days": 4,
+          "project_related": true
+        },
+        {
+          "name": "pokemon-card-training-east",
+          "region": "us-east-2",
+          "created": "2026-01-07T22:05:04+00:00",
+          "age_days": 4,
+          "project_related": true
+        },
+        {
+          "name": "pokemon-card-training-us-east-2",
+          "region": "us-east-2",
+          "created": "2026-01-12T02:39:18+00:00",
+          "age_days": 0,
+          "project_related": true
+        },
+        {
+          "name": "sagemaker-studio-943271038849-1coz58jeo8i",
+          "region": "us-east-2",
+          "created": "2026-01-10T07:27:19+00:00",
+          "age_days": 1,
+          "project_related": true
+        },
+        {
+          "name": "sagemaker-studio-943271038849-jvkpy54edmr",
+          "region": "us-east-1",
+          "created": "2026-01-11T23:49:47+00:00",
+          "age_days": 0,
+          "project_related": true
+        },
+        {
+          "name": "sagemaker-studio-943271038849-mp3ujbf4s3",
+          "region": "us-east-2",
+          "created": "2026-01-11T22:34:47+00:00",
+          "age_days": 0,
+          "project_related": true
+        },
+        {
+          "name": "sagemaker-us-east-1-943271038849",
+          "region": "us-east-1",
+          "created": "2026-01-11T23:49:50+00:00",
+          "age_days": 0,
+          "project_related": true
+        },
+        {
+          "name": "sagemaker-us-east-2-943271038849",
+          "region": "us-east-2",
+          "created": "2026-01-10T07:27:22+00:00",
+          "age_days": 1,
+          "project_related": true
+        }
+      ],
+      "other_buckets": [
+        {
+          "name": "cdk-hnb659fds-assets-943271038849-us-east-2",
+          "region": "us-east-2",
+          "created": "2025-12-05T08:03:14+00:00",
+          "age_days": 37,
+          "project_related": false
+        },
+        {
+          "name": "tcg-mastermind-cloudtrail-logs-943271038849",
+          "region": "us-east-2",
+          "created": "2025-12-14T19:44:25+00:00",
+          "age_days": 28,
+          "project_related": false
+        },
+        {
+          "name": "tcg-mastermind-terraform-state",
+          "region": "us-east-2",
+          "created": "2025-12-07T07:50:32+00:00",
+          "age_days": 35,
+          "project_related": false
+        },
+        {
+          "name": "tcg-mastermind-terraform-state-943271038849",
+          "region": "us-east-2",
+          "created": "2025-12-14T19:44:21+00:00",
+          "age_days": 28,
+          "project_related": false
+        }
+      ]
+    },
+    "cloudwatch_logs": {
+      "project_logs": [
+        {
+          "name": "/aws/sagemaker/ProcessingJobs",
+          "created": 1768038861878,
+          "size_bytes": 14851,
+          "retention": "Never expire"
+        },
+        {
+          "name": "/aws/sagemaker/TrainingJobs",
+          "created": 1767825198416,
+          "size_bytes": 1925238,
+          "retention": "Never expire"
+        },
+        {
+          "name": "/aws/sagemaker/studio",
+          "created": 1768031453266,
+          "size_bytes": 370543,
+          "retention": "Never expire"
+        }
+      ],
+      "other_logs": [
+        {
+          "name": "/aws/apprunner/bedrock-access-gateway/83addd61935149f3b17ae544c4f9026e/application",
+          "created": 1766467153523,
+          "size_bytes": 11011295,
+          "retention": "Never expire"
+        },
+        {
+          "name": "/aws/cloudtrail/tcg-mastermind",
+          "created": 1766424182009,
+          "size_bytes": 52676510,
+          "retention": 30
+        },
+        {
+          "name": "/aws/ecs/containerinsights/tcg-mastermind-production/performance",
+          "created": 1766887402153,
+          "size_bytes": 12832866,
+          "retention": 1
+        },
+        {
+          "name": "/aws/ecs/ebay-mcp-audit-production",
+          "created": 1766424879708,
+          "size_bytes": 0,
+          "retention": 30
+        },
+        {
+          "name": "/aws/events/codebase-indexer-cleanup",
+          "created": 1766424881789,
+          "size_bytes": 0,
+          "retention": 30
+        },
+        {
+          "name": "/aws/lambda/claude-code-dev-development-stop-idle",
+          "created": 1766109207972,
+          "size_bytes": 66448,
+          "retention": "Never expire"
+        },
+        {
+          "name": "/aws/rds/instance/codebase-indexer-production/postgresql",
+          "created": 1765739337352,
+          "size_bytes": 5348412,
+          "retention": "Never expire"
+        },
+        {
+          "name": "/aws/rds/instance/open-webui-postgres/postgresql",
+          "created": 1765736572345,
+          "size_bytes": 4146973,
+          "retention": 30
+        },
+        {
+          "name": "/aws/rds/instance/seek-apps-data/postgresql",
+          "created": 1766898543623,
+          "size_bytes": 12913267,
+          "retention": "Never expire"
+        },
+        {
+          "name": "/aws/vpc/open-webui-flow-logs",
+          "created": 1765736515147,
+          "size_bytes": 358490134,
+          "retention": 7
+        },
+        {
+          "name": "/ecs/bedrock-gateway",
+          "created": 1765821691019,
+          "size_bytes": 4334408,
+          "retention": 7
+        },
+        {
+          "name": "/ecs/codebase-indexer",
+          "created": 1765771079152,
+          "size_bytes": 56908944,
+          "retention": 14
+        },
+        {
+          "name": "/ecs/codebase-indexer-worker-production",
+          "created": 1766509265596,
+          "size_bytes": 4851871,
+          "retention": 14
+        },
+        {
+          "name": "/ecs/ebay-mcp",
+          "created": 1766024114602,
+          "size_bytes": 0,
+          "retention": 14
+        },
+        {
+          "name": "/ecs/mcp-portal-production",
+          "created": 1765841197824,
+          "size_bytes": 0,
+          "retention": 7
+        },
+        {
+          "name": "/ecs/mcp-server",
+          "created": 1765771079147,
+          "size_bytes": 0,
+          "retention": 14
+        },
+        {
+          "name": "/ecs/open-webui",
+          "created": 1765771079490,
+          "size_bytes": 4256752,
+          "retention": 7
+        },
+        {
+          "name": "/ecs/scraper-production",
+          "created": 1766424879764,
+          "size_bytes": 5754,
+          "retention": 14
+        },
+        {
+          "name": "/ecs/session-observer",
+          "created": 1766895252716,
+          "size_bytes": 0,
+          "retention": 7
+        },
+        {
+          "name": "RDSOSMetrics",
+          "created": 1765527081207,
+          "size_bytes": 95581844,
+          "retention": 30
+        }
+      ]
+    }
+  },
+  "recommendations": [
+    {
+      "type": "iam_role",
+      "resource": "AmazonSageMakerAdminIAMExecutionRole",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "AmazonSagemakerCanvasBedrockRole-20260111T174905",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "AmazonSageMakerS3TablesRoleForLakeFormation",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "AmazonSageMakerServiceCatalogProductsApiGatewayRole",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "AmazonSageMakerServiceCatalogProductsCloudformationRole",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "AmazonSageMakerServiceCatalogProductsCodeBuildRole",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "AmazonSageMakerServiceCatalogProductsCodePipelineRole",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "AmazonSageMakerServiceCatalogProductsEventsRole",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "AmazonSageMakerServiceCatalogProductsExecutionRole",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "AmazonSageMakerServiceCatalogProductsFirehoseRole",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "AmazonSageMakerServiceCatalogProductsGlueRole",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "AmazonSageMakerServiceCatalogProductsLambdaRole",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "AmazonSageMakerServiceCatalogProductsLaunchRole",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "AmazonSageMakerServiceCatalogProductsUseRole",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "AmazonSageMakerUserIAMExecutionRole",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "AWSServiceRoleForAmazonSageMakerNotebooks",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_role",
+      "resource": "SageMaker-ExecutionRole",
+      "action": "review_and_delete",
+      "reason": "Project-related role, not the known good role (SageMaker-MarcosAdmin-ExecutionRole)"
+    },
+    {
+      "type": "iam_user",
+      "resource": "bedrock-api-user",
+      "action": "review_and_delete",
+      "reason": "IAM user may be unnecessary with SSO setup"
+    },
+    {
+      "type": "iam_user",
+      "resource": "bedrock-service-account",
+      "action": "review_and_delete",
+      "reason": "IAM user may be unnecessary with SSO setup"
+    },
+    {
+      "type": "iam_user",
+      "resource": "litellm-bedrock",
+      "action": "review_and_delete",
+      "reason": "IAM user may be unnecessary with SSO setup"
+    },
+    {
+      "type": "iam_user",
+      "resource": "termius-main",
+      "action": "review_and_delete",
+      "reason": "IAM user may be unnecessary with SSO setup"
+    },
+    {
+      "type": "sagemaker",
+      "resource": "us-east-1:domains",
+      "action": "review_and_delete",
+      "reason": "SageMaker resources in non-primary region (us-east-2)"
+    },
+    {
+      "type": "sagemaker",
+      "resource": "us-east-1:user_profiles",
+      "action": "review_and_delete",
+      "reason": "SageMaker resources in non-primary region (us-east-2)"
+    },
+    {
+      "type": "s3_bucket",
+      "resource": "amazon-sagemaker-943271038849-us-east-2-3nva8qgi67cxih",
+      "action": "review_and_delete",
+      "reason": "Project-related bucket, not the known good bucket (pokemon-card-training-us-east-2)"
+    },
+    {
+      "type": "s3_bucket",
+      "resource": "pokemon-card-training-east",
+      "action": "review_and_delete",
+      "reason": "Project-related bucket, not the known good bucket (pokemon-card-training-us-east-2)"
+    },
+    {
+      "type": "s3_bucket",
+      "resource": "sagemaker-studio-943271038849-1coz58jeo8i",
+      "action": "review_and_delete",
+      "reason": "Project-related bucket, not the known good bucket (pokemon-card-training-us-east-2)"
+    },
+    {
+      "type": "s3_bucket",
+      "resource": "sagemaker-studio-943271038849-jvkpy54edmr",
+      "action": "review_and_delete",
+      "reason": "Project-related bucket, not the known good bucket (pokemon-card-training-us-east-2)"
+    },
+    {
+      "type": "s3_bucket",
+      "resource": "sagemaker-studio-943271038849-mp3ujbf4s3",
+      "action": "review_and_delete",
+      "reason": "Project-related bucket, not the known good bucket (pokemon-card-training-us-east-2)"
+    },
+    {
+      "type": "s3_bucket",
+      "resource": "sagemaker-us-east-1-943271038849",
+      "action": "review_and_delete",
+      "reason": "Project-related bucket, not the known good bucket (pokemon-card-training-us-east-2)"
+    },
+    {
+      "type": "s3_bucket",
+      "resource": "sagemaker-us-east-2-943271038849",
+      "action": "review_and_delete",
+      "reason": "Project-related bucket, not the known good bucket (pokemon-card-training-us-east-2)"
+    }
+  ]
+}
