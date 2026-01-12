@@ -52,3 +52,12 @@ models/embedding/pytorch_weights/
 models/onnx/
 models/hailo/
 data/hailo_calibration/
+
+# AWS Credentials (SECURITY: Never commit credentials!)
+.env.local
+.env.*.local
+.aws/
+docker-compose.override.yml
+**/credentials
+**/*credentials*.json
+aws_credentials.txt

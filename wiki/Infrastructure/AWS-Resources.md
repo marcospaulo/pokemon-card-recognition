@@ -141,8 +141,8 @@ aws s3 sync s3://pokemon-card-training-us-east-2/project/pokemon-card-recognitio
 
 **User**: `raspberry-pi-user`
 **ARN**: `arn:aws:iam::943271038849:user/raspberry-pi-user`
-**Access Key ID**: `AKIA5XH2VZ6ASIRIRHGX`
-**Permissions**: AdministratorAccess policy
+**Access Key ID**: `[Stored in ~/.aws/credentials on Pi]`
+**Permissions**: AmazonS3ReadOnlyAccess policy
 
 **Purpose**: Allows Raspberry Pi to download data from S3 without browser login
 
@@ -200,9 +200,9 @@ sudo ./aws/install
 # Configure with raspberry-pi-user credentials
 aws configure
 
-# Enter:
-AWS Access Key ID: AKIA5XH2VZ6ASIRIRHGX
-AWS Secret Access Key: [from setup]
+# Enter the credentials you received from AWS admin:
+AWS Access Key ID: [provided by AWS admin]
+AWS Secret Access Key: [provided by AWS admin]
 Default region: us-east-2
 Default output format: json
 ```
