@@ -50,3 +50,5 @@ temp/
 # Large training artifacts
 models/embedding/pytorch_weights/
 models/onnx/
+models/hailo/
+data/hailo_calibration/
