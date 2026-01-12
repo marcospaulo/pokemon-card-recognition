@@ -2,6 +2,16 @@
 
 Real-time Pokemon card detection and recognition on Raspberry Pi 5 with AI Camera (IMX500) and Hailo 8 accelerator.
 
+## ⚠️ Data Not Included in Git
+
+This repository contains **code only**. Large data files (25+ GB) are stored on AWS S3 due to GitHub's 100 MB file size limit:
+- **Raw card images**: 12.6 GB
+- **Processed training data**: 12.5 GB
+- **Reference database**: 128 MB (embeddings for 17,592 cards)
+- **Model weights**: 6+ GB (teacher + student models)
+
+See the [Data](#data) section below for S3 download instructions.
+
 ---
 
 ## 📚 Complete Documentation Wiki
@@ -33,28 +43,26 @@ The embedding model was trained using knowledge distillation from DINOv3 ViT-B/1
 
 ```
 pokemon-card-recognition/
-├── data/
-│   ├── raw/                    # Source images and metadata
-│   │   ├── card_images/        # 17,592 Pokemon card PNGs
-│   │   └── metadata/           # Card metadata JSONs
-│   ├── processed/              # Training datasets
-│   │   ├── classification/     # Embedding model training
-│   │   └── detection/          # YOLO detection training
-│   └── reference/              # Inference database
+├── data/                       # ⚠️ NOT IN GIT - Download from S3
+│   ├── raw/                    # 12.6 GB raw card images
+│   ├── processed/              # 12.5 GB training datasets
+│   └── reference/              # 128 MB embeddings + index
 ├── models/
-│   ├── detection/              # YOLO models (.pt, .onnx)
-│   └── embedding/              # LeViT models (.hef, .onnx)
+│   ├── detection/              # YOLO models
+│   ├── embedding/              # Student models
+│   └── onnx/                   # 23 MB ONNX (in git)
 ├── src/
-│   ├── data/                   # Dataset and augmentations
+│   ├── data/                   # Dataset loaders
 │   ├── models/                 # Model architectures
-│   ├── training/               # Training scripts
+│   ├── training/               # Training scripts (SageMaker)
 │   ├── inference/              # Inference pipeline
-│   └── hardware/               # Camera and accelerator
-├── scripts/                    # Utility scripts
-├── docs/                       # PRD and documentation
-├── docker/                     # Docker/Hailo SDK
-└── references/                 # Third-party references
+│   └── hardware/               # IMX500 + Hailo integration
+├── scripts/                    # Deployment & utilities
+├── docs/                       # Technical specifications
+└── wiki/                       # Complete documentation
 ```
+
+**Note**: Large model files and datasets are excluded from git via `.gitignore` and stored on AWS S3. See the [Data](#data) section for download instructions.
 
 ## Hardware Requirements
 
@@ -94,28 +102,50 @@ See `docs/` for original PRD specifications:
 
 ## Data
 
-All training data and inference databases are backed up on AWS S3 and available locally:
+⚠️ **Important**: Large data files are NOT stored in this git repository due to GitHub's file size limits (100 MB max). All data is stored on AWS S3.
 
-- **17,592** Pokemon card images (~13 GB raw)
-- **17,592** Processed classification images (~13 GB)
-- **1,024** Hailo calibration images (734 MB)
-- **160** card sets with complete metadata
-- **Reference database**: Pre-computed embeddings + uSearch index (106 MB)
-  - 768-dimensional embeddings for all 17,592 cards
-  - ARM-optimized vector search for real-time matching
+### What's on AWS S3 (31.7 GB total)
 
-### Data Access
+| Data Type | S3 Location | Size | Description |
+|-----------|-------------|------|-------------|
+| **Raw card images** | `data/raw/card_images/` | 12.6 GB | 17,592 Pokemon card PNGs + metadata |
+| **Processed training data** | `data/processed/classification/` | 12.5 GB | Training/val/test splits for embedding model |
+| **Reference database** | `data/reference/` | 128 MB | Pre-computed embeddings + uSearch index |
+| **Hailo calibration** | `models/efficientnet-hailo/calibration/` | 734 MB | 1,024 images for Hailo quantization |
+| **Teacher model** | `models/dinov3-teacher/v1.0/` | 5.6 GB | DINOv3 ViT-B/14 (86M params) |
+| **Student model** | `models/efficientnet-student/stage2/v2.0/` | 97 MB | EfficientNet-Lite0 PyTorch + ONNX |
 
-All data is stored on S3 and can be downloaded:
+### Getting the Data
+
+**Prerequisites**: AWS CLI configured with access to `pokemon-card-training-us-east-2` S3 bucket
+
 ```bash
-# Download reference database (required for inference)
-aws s3 sync s3://pokemon-card-training-us-east-2/project/pokemon-card-recognition/data/reference/ ./data/reference/
+# Required for inference - Download reference database (128 MB)
+aws s3 sync s3://pokemon-card-training-us-east-2/project/pokemon-card-recognition/data/reference/ \
+  ./data/reference/
 
-# Download raw card images (optional, for development)
-aws s3 sync s3://pokemon-card-training-us-east-2/project/pokemon-card-recognition/data/raw/ ./data/raw/
+# Optional for development - Download raw card images (12.6 GB)
+aws s3 sync s3://pokemon-card-training-us-east-2/project/pokemon-card-recognition/data/raw/ \
+  ./data/raw/
+
+# Optional for training - Download processed datasets (12.5 GB)
+aws s3 sync s3://pokemon-card-training-us-east-2/project/pokemon-card-recognition/data/processed/ \
+  ./data/processed/
+
+# Optional for Hailo compilation - Download calibration data (734 MB)
+aws s3 sync s3://pokemon-card-training-us-east-2/project/pokemon-card-recognition/models/efficientnet-hailo/calibration/ \
+  ./models/efficientnet-hailo/calibration/
 ```
 
-See `PROJECT_ACCESS.md` for complete S3 access documentation.
+### What's Deployed on Raspberry Pi
+
+The Raspberry Pi deployment in `~/pokemon-card-recognition/` includes:
+- ✅ Reference database (128 MB) - already deployed
+- ✅ EfficientNet-Lite0 HEF model (14 MB) - compiled for Hailo 8
+- ✅ YOLO11n-OBB ONNX model (10 MB) - for IMX500 camera
+- ❌ Raw images NOT needed for inference (only for training)
+
+See `PROJECT_ACCESS.md` for AWS credentials and detailed S3 structure.
 
 ## Models
 
