@@ -72,7 +72,7 @@ def main():
         calib_data = None
 
     print('\n[1/4] Initializing Hailo runner...')
-    runner = ClientRunner(hw_arch='hailo8l')
+    runner = ClientRunner(hw_arch='hailo8')  # Target Hailo-8 (26 TOPS, not 8L)
 
     print('[2/4] Loading ONNX model...')
     onnx_model = os.environ.get('ONNX_MODEL', 'pokemon_student_stage2_final.onnx')
